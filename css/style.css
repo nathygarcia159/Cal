@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.8s ease;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(4, 0, 255), rgb(255, 255, 255));
+}
+
+.container {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(180, 130, 130);
+  background-color: white;
+}
+.calculator #display {
+  color: #a01ea0;
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.calculator #equal {
+  height: 150px;
+}
+.calculator #clear {
+  background-color: #fcd5d8;
+  color: #fc5253;
+}
+.calculator .btn-number {
+  background-color: #c3eaff;
+  color: rgb(12, 12, 12);
+}
+.calculator .btn-operator {
+  background-color: rgb(236, 146, 146);
+  color: #5411f0;
+}
+.calculator .btn-equal {
+  background-color: #cf7fcf;
+  color: #5084e6;
+}
+.calculator.dark {
+  background-color: #1b1b1b;
+}
+.calculator.dark #display {
+  color: #f8fafb;
+}
+.calculator.dark #clear {
+  background-color: #b14eb1;
+  color: #f8fafb;
+}
+.calculator.dark .btn-number {
+  background-color: skyblue;
+  color: 0;
+  font-weight: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: green;
+  color: #95d332;
+}
+.calculator.dark .btn-equal {
+  background-color: #fc5253;
+  color: #f8fafb;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #c3eaff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+.theme-toggler.active {
+  color: #333;
+}
+.theme-toggler.active::before {
+  background-color: rgb(252, 252, 247);
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.25 ease;
+}
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
